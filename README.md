@@ -9,57 +9,53 @@ This project is a Python program that reads a list of English words from a text 
 ## 📌 What is a Palingram?
 
 A **palingram** is a pair of real words (like `gateman` and `nametag`) that form a **palindrome** when joined together:
-
-```text
 gateman + nametag → gatemannametag ← same forward & backward
-🚀 Features
 
-    Reads words from any .txt file
 
-    Efficiently checks for palingrams using DSA principles
+---
 
-    Offers 3 display formats:
+## 🚀 Features
 
-        Just the words
+- Reads words from any `.txt` file
+- Efficiently checks for palingrams using **DSA principles**
+- Offers 3 display formats:
+  - Just the words
+  - Just the full palindromes
+  - Both
+- Optionally save results to a file
 
-        Just the full palindromes
+---
 
-        Both
+## 🛠️ Technologies Used
 
-    Optionally save results to a file
+- Python 3
+- Standard Library only
+- `set` for fast word lookups
+- Two-pointer technique for palindrome validation
 
-🛠️ Technologies Used
+---
 
-    Python 3
+## 🧠 DSA Concepts Used
 
-    Standard Library only
+| Concept               | Purpose                                        |
+|------------------------|-----------------------------------------------|
+| `set` data structure   | Fast O(1) word lookup                         |
+| Nested loops           | Iterate over unique word pairs               |
+| Two-pointer algorithm  | Efficient palindrome checking without reversal |
+| Exception handling     | File not found or I/O error handling          |
 
-    set for fast word lookups
+---
 
-    Two-pointer technique for palindrome validation
-🧠 DSA Concepts Used
-Concept	Purpose
-set data structure	Fast O(1) word lookup
-Nested loops	Iterate over unique word pairs
-Two-pointer algorithm	Efficient palindrome checking without reversal
-Exception handling	File not found or IO errors
-✅ How to Use
+## ✅ How to Use
 
-    Clone or download the repo
+```bash
+# Clone or download the repo
 
-    Prepare a word list file (e.g. words.txt)
+# Prepare a word list file (e.g., words.txt)
 
-    Run the script:
-
+# Run the script
 python palingram_finder.py
 
-    Follow on-screen prompts:
-
-        Enter your file name
-
-        Choose output format
-
-        Optionally save results
 
 📄 Sample Dictionary (for testing)
 
